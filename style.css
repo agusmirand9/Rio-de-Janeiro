@@ -1,0 +1,756 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:1.2rem;
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+body{
+    font-family: 'IBM Plex Sans JP', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #67bcdb;
+    color: #ffff;
+
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-header{
+    top: 0;
+    position: sticky;
+    z-index: 5;
+    background-color: rgba(240, 248, 255, 0.441);
+
+
+}
+.logo{
+   height: 60px;
+   width: auto;
+}
+
+.main-navigation{
+ width: 1200px;
+
+    ul{
+        display: flex;
+        justify-content:flex-end;
+        
+
+        li{
+            list-style: none;
+            width: 250px;
+            
+
+            a{
+                color:#00378e;
+
+                text-decoration: none;
+                text-align:center;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                display: block;      
+                transition: all 0.5s;  
+            }
+
+            a:hover{
+                background-color: #e8e6ad;
+                color: rgb(177, 38, 28);
+                transition: all 0.5s;
+                
+
+            }
+        }
+    }
+}
+/*Pagina de inicio*/
+
+.main-text{
+    position: relative;
+  
+    background-image:url('imagenes/ciudad_cristo1.jpg');
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.main-text h1{
+    position: absolute;
+    bottom: 20px;
+    left:80px;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+    
+}
+
+.main-text span{
+   background-color: rgba(255, 255, 255, 0.501);
+    display: inline-block;       
+    padding: 0 80px;    
+    margin: 5px 0;       
+   
+}
+
+
+#intro{
+    background-image: url(imagenes/ciudad_cristo.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;               
+    flex-direction: column;      
+    
+    
+    
+    .text-intro {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    
+        p{
+          margin-bottom: 40px; 
+       
+        }
+    }
+
+    a {
+        background-color: rgb(102, 212, 255);
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 40vh;
+        transition: all 0.5s;
+    }
+
+    a:hover {
+        background-color: #161c96;
+        transform: scale(1.06);
+        transition: all 0.5s;
+    }
+
+}
+
+
+
+#seccion2{
+    background-image: url(imagenes/playa-calle2.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+    .text-2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    
+   }
+     
+
+    p{
+       margin-bottom: 20px;    
+       text-align: center;  
+       
+    }
+    a {
+        background-color: rgb(102, 212, 255);
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 40vh;
+        transition: all 0.5s;
+    }
+
+    a:hover {
+        background-color: #161c96;
+        transform: scale(1.06);
+        transition: all 0.5s;
+    }
+
+    
+}    
+
+.banner-playas{
+ height:50vh;
+ width: 50vh;
+ border-radius: 20px;
+  background-image: url('imagenes/playa5.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #ffffff;
+
+}
+.bg-animation{
+    animation: bg-dynamic 20s alternate infinite linear;
+}
+
+@keyframes bg-dynamic {
+    20%{
+        background-image: url('imagenes/playa1.jpg');
+    }
+    
+    25%{
+        background-image: url('imagenes/playa6.jpg');
+    }
+    50%{
+        background-image: url('imagenes/playa4.jpg');
+    }
+    
+    75%{
+        background-image: url('imagenes/playa3.jpg');
+    }
+    100%{
+        background-image: url('imagenes/playa5.jpg');
+    }
+}
+
+.bg-animation2{
+    animation: bg-dynamic2 20s alternate infinite linear;
+}
+.banner-parques {
+height:50vh;
+ width: 50vh;
+ border-radius: 20px;
+  background-image: url('imagenes/parque1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #ffffff;
+}
+@keyframes bg-dynamic2 {
+    20%{
+        background-image: url('imagenes/parque1.jpg');
+    }
+
+    25%{
+        background-image: url('imagenes/parque2.jpg');
+    }
+    50%{
+        background-image: url('imagenes/parque3.jpg');
+    }
+
+    75%{
+        background-image: url('imagenes/parque4.jpg');
+    }
+    100%{
+        background-image: url('imagenes/parque5.jpg');
+    }
+}
+.banners{
+    
+  display: flex;
+   
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 0;
+    }
+
+#seccion3{
+    background-image: url(imagenes/palmera.jpg);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position:bottom;
+
+    .text-3 {
+    max-width: 800px;
+    padding-top: 80px;
+
+    p, h2{
+       margin-bottom: 60px;  
+       text-align: center;    
+      
+    }
+    a {
+        background-color: rgb(102, 212, 255);
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 45vh;
+        transition: all 0.5s;
+    }
+
+    a:hover {
+        background-color: #161c96;
+        transform: scale(1.06);
+        transition: all 0.5s;
+    }
+
+    }
+ }
+
+
+footer{
+    background-color: rgb(12, 71, 123);
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+#to-top{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    padding:30px 10px;
+    background-color: rgb(234, 179, 69);
+    bottom: 20px;
+    right: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: white;
+
+}
+
+#to-top:hover{
+    background-color: #faffd2;
+    color:rgb(234, 179, 69);
+    transform: scale(1.06);
+    transition: all 0.3s;
+}
+
+
+/*Pagina Formulario*/
+#fondo-form { 
+  background-image: url("imagenes/palapa.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+
+.reserva-form {
+  max-width: 800px;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  background-color: rgba(86, 93, 93, 0.379);
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  margin:10px 20px;
+  width: calc(100% - 40px);
+
+
+}
+
+input[type="checkbox"] {
+transform: scale(1.5);
+
+
+}
+
+label, legend {
+margin:10px 20px;
+font-size: 1rem;
+text-align: center;  
+
+
+   
+}
+
+.text-form {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.text-form h1{
+  background-color: #cccccc38;
+}
+
+
+/*boton enviar formulario*/
+.btn-container{
+  display: flex;
+  justify-content: center;
+
+    .btn-enviar{
+    width: 200px;
+    padding: 10px 16px;
+    font-size: 1.2rem;
+    background-color: rgb(102, 212, 255);
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.5s;
+    border: none;
+    }
+
+    .btn-enviar:hover {
+        background-color: #161c96;
+        color: rgb(255, 255, 255);
+        transform: scale(1.06);
+        transition: all 0.5s;
+    }
+}
+
+/*Pagina Gracias*/
+#fondo-gracias {
+background-image: url("imagenes/palmera.jpg");
+background-size: cover;
+background-position: bottom;
+background-repeat: repeat;
+width: 100%;
+height: 100vh;
+
+
+.btn-volver {
+    display: flex;
+    margin-left:300px;
+    margin-top: 20px;
+
+    a {
+        background-color:#161c96;
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.4s;
+    }
+
+    a:hover {
+        background-color: rgb(102, 212, 255) ;
+        color: rgb(255, 255, 255);
+        transform: scale(1.06);
+        transition: all 0.4s;
+        }
+    }
+
+    h1{
+        color: #ffffff;
+        text-align: left;
+        font-size: 2rem;
+        padding-top: 200px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+ /*clases aux*/
+.d-flex {
+  display: flex;
+
+}
+
+
+/*Pagina Itinerario*/
+#fondo-itinerario{
+    background-image: url(imagenes/palmeras1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+    .main-text-itinerario{
+        background-color: #44444438;
+        padding: 20px;
+    }
+
+    .parada{
+    background-color: #10195747;
+    max-width: 800px;
+    padding-top: 80px;
+    margin: 60px auto;
+
+    .map{
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    p, h2, h3{
+       margin-bottom: 40px;
+       text-align: center;
+          
+    }
+
+    h2, h3{
+    background-color: #f9f8f25c;
+    padding: 10px;
+    margin: 20px 120px;
+ 
+        
+    }
+
+    a{
+        color: #003172;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    }
+    a:hover{
+        color: #e8e469;
+        
+
+
+    }
+}
+}
+
+/*Pagina info*/
+ .menu{
+        padding: 1.5rem 0;
+        display: flex;
+        justify-content:center;
+        list-style: none;
+        gap: 1rem;
+      
+
+        li{
+            
+            a{
+                background-color: #f4bd79e3;
+                border-radius: 5px;
+                padding: 30px 0;
+                width: 150px;
+                text-align: center;
+                color:#fff;
+                display: inline-block;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+#map{
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.sobre-rio{
+    background-color: #575233;
+
+}
+#top-rio{
+background-image: url("imagenes/playa-calle2.jpg");
+background-size: contain;
+background-position: bottom;
+background-repeat: repeat;
+width: 100%;
+height: 100vh;
+}
+
+#info{
+background-image: url("imagenes/palmera.jpg");
+
+    width: 100%;
+    height: 150vh;
+    background-size: contain;
+    background-position:bottom;
+    background-repeat: repeat;
+
+    .informacion {
+    max-width: 800px;
+    padding-top: 50px;
+    
+
+    p, h2{
+       margin-bottom: 50px;  
+       text-align: center;  
+       
+       padding: 20px;
+    }
+
+}
+}
+
+#enlaces{
+    background-image: url("imagenes/palmera.jpg");
+
+    width: 100%;
+    height: 50vh;
+    background-size: contain;
+    background-position:bottom;
+    background-repeat: repeat;
+    
+
+
+.text-enlaces {
+  padding: 35px 20px;
+  max-width: 900px;
+  
+  border-radius: 10px;
+   margin-top: auto;
+
+
+    h2{
+     color: #e09448;
+     margin-bottom: 20px;
+    }
+
+    ul {
+      
+      padding: 10px;
+      li {
+        margin-bottom: 12px;
+        
+         a{
+          text-decoration: none;
+          color: #ffffff;
+          text-decoration: underline;
+                    
+        }
+    }
+}
+}
+}
+
+#noticias{
+background-image: url("imagenes/fondo-noticias.jpg");
+
+    width: 100%;
+    height: 130vh;
+    background-size:contain;
+    background-position:center;
+
+    h2{
+        text-align: center;
+        padding-top: 40px;
+        color: #ffffffe4;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+ .text-noti {
+  display: flex;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+ 
+  border-radius: 10px;
+  flex-wrap: wrap;
+
+  .noticia{
+    flex: 1 1 40%;
+    background-color: rgba(42, 47, 52, 0.558);
+    margin: 20px 10px;
+    padding: 20px;
+    color: #ecf1f7;
+    text-align: center;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+
+    p{
+        color: #d28526;
+    }
+
+  }
+  .noticia:hover{
+    transform: translateY(-4px);
+  }
+
+ }
+
+#eventos {
+ background-image: url("imagenes/fondo-azul.jpg");
+
+    width: 100%;
+    height: 80vh;
+    background-size:contain;
+    background-repeat: repeat;
+    background-position:center;
+    padding: 60px 20px;
+ 
+
+  .fechas-eventos{
+    padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+
+  background-color: rgba(255, 255, 255, 0.51);
+   
+   
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    h2{
+       color: #003172;
+    }
+
+    ul{
+        
+        li{ 
+            background-color: rgba(21, 26, 69, 0.478);
+            padding: 10px;
+            margin: 20px;
+             list-style: none;
+            
+            }
+    }
+
+  }
+
+ }
+
+ #clima {
+    background-image: url("imagenes/palapa.jpg");
+
+    width: 100%;
+    height: 80vh;
+    background-size:cover;
+    background-repeat: repeat;
+    background-position:center;
+    padding: 60px 20px;
+
+    .text-clima{
+        max-width: 800px;
+        text-align: center;
+        padding-top: 40px;
+        color: #ffffffe4;
+        
+        margin-bottom: 20px;
+
+        h2{
+            font-size: 2rem;
+        }
+    }
+    
+    
+
+ }
+
+ 

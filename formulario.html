@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contactanos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!--fuente tipografica-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&display=swap" rel="stylesheet">
+   
+    
+</head>
+<body id="fondo-form">
+         <header id="main-header">
+        <div class="container">
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="itinerario.html">Itinerario</a></li>
+                    <li><a href="informacion.html">Sobre Rio</a></li>
+                    <li><a href="formulario.html">Reserva</a></li>
+                </ul>
+            </nav>
+                
+        </div>
+    </header>
+
+    <section id="top" class="container text-form">
+        
+        <h1>Reserva nuestro tour y elegi que lugares conoceras</h1>
+        
+    </section>
+
+    <section id="reserva" class="d-flex">
+        <div class="container reserva-form" >
+           <form action="thank-you.html" method="get">
+                <div>
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name" placeholder="Maria" required>
+                </div>
+
+                 <div>
+                    <label for="last_name">Apellido: </label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Lopez" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" name="email" placeholder="MariaLopez@gmail.com" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+54 11 1234 5678" required>
+
+                </div>
+
+                <div>
+                    <label for="fecha">Elige una fecha:</label>
+                        <input 
+                            type="date"
+                            id="fecha"
+                            name="fecha" 
+                            required>
+                </div>
+                <div>
+                    <label for="personas">¿Cuantas personas son?</label>
+                    <select name="personas" id="personas" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5-mas">5 o mas</option>
+                        
+                    </select>
+                </div>
+
+                <div>       
+                    <fieldset class="d-flex">
+                            <legend>Elige que lugares te gustaria visitar</legend>
+                            <div>
+                                <input type="checkbox" id="cristo" name="cristo">
+                                <label for="cristo">Cristo Do Corcovado</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="escadaria" name="escadaria">
+                                <label for="escadaria">Escadaria Selaron</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="mineiro" name="mineiro" checked>
+                                <label for="mineiro">Bar Do Mineiro</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="ruinas" name="ruinas">
+                                <label for="ruinas">Parque Das Ruinas</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="bondinho" name="bondinho">
+                                <label for="bondinho">Parque Bondinho Pão de Açúcar</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="restaurante" name="restaurante">
+                                <label for="restaurante">Restaurante Embaixada Carioca</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="sacrilegio" name="sacrilegio">
+                                <label for="sacrilegio">Bar/Cafe Sacrilégio</label>
+                            </div>
+                        </fieldset>
+                </div>
+
+                <div>
+                    <label for="idioma">Idioma del tour:</label>
+                    <select name="idioma" id="idioma">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                    <option value="pt">Portugués</option>
+                    <option value="fr">Francés</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="coment">Comentarios o peticiones especiales:</label>
+                    <textarea name="coment" id="coment"></textarea>
+                    </div>
+                    
+               
+                <div>
+                    <p><em>Verificá tus datos antes de enviar.</em></p>
+                </div>
+                <div class="btn-container">
+                    <input type="submit" value="Enviar" class="btn-enviar">
+                </div>
+            
+            </form> 
+
+        </div>
+
+        
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+
+            <p>Informacion</p>
+            <p>Agustina Miranda</p>
+            <p>MAQUETADO Y DESARROLLO WEB</p>
+            <p>Sitio Web-Parcial N2, Primer cuatrimestre de la Escuela Da Vinci. 2025</p>
+        </div>
+    </footer>
+    <div class="container">
+        <a id="to-top" href="#top">SUBIR</a>
+
+    </div>
+</body>
+</html>
